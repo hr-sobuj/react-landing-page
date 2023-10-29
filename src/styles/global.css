@@ -1,0 +1,27 @@
+/* 
+   Name: Habibur Rahman
+   Project: React Landing Page
+   Date: October 30, 2023
+   File: global.css
+*/
+
+/* Default container class */
+.container {
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsive styles for tablets */
+@media (max-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Responsive styles for mobile devices */
+@media (max-width: 480px) {
+  .container {
+    max-width: 480px;
+  }
+}
