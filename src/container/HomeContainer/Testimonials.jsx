@@ -1,21 +1,27 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../../styles/Testimonials.module.css";
+import client1Image from "../../assets/images/client1.jpg";
+import client2Image from "../../assets/images/client2.jpg";
+import client3Image from "../../assets/images/client3.jpg";
 
 const testimonialsData = [
   {
     id: 1,
     author: "John Doe",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image: client1Image,
   },
   {
     id: 2,
     author: "Jane Smith",
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image: client2Image,
   },
   {
     id: 3,
     author: "Alice Johnson",
-    text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    image: client3Image,
   },
 ];
 
@@ -35,6 +41,16 @@ function Testimonials() {
     );
   };
 
+  useEffect(() => {
+    const interval = setInterval(() => {
+      nextTestimonial();
+    }, 5000);
+
+    return () => {
+      clearInterval(interval);
+    };
+  }, [currentTestimonialIndex]);
+
   return (
     <section className={styles.testimonials}>
       <div className="container">
@@ -47,6 +63,12 @@ function Testimonials() {
             &lt;
           </button>
           <div className={styles.testimonialContent}>
+            <div className={styles.testimonialImage}>
+              <img
+                src={testimonialsData[currentTestimonialIndex].image}
+                alt={testimonialsData[currentTestimonialIndex].author}
+              />
+            </div>
             <p className={styles.testimonialText}>
               {testimonialsData[currentTestimonialIndex].text}
             </p>
