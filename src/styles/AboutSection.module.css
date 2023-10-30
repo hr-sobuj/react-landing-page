@@ -43,20 +43,12 @@
   max-width: 100%;
   height: auto;
   display: block;
-  max-height: 450px;
+  max-height: 650px;
   object-fit: cover;
   transition: transform 0.3s;
 }
 
 /* Hover effects */
-.aboutUsTitle:hover {
-  color: #0056b3;
-}
-
-.aboutUsDescription:hover {
-  color: #0056b3;
-}
-
 .aboutUsImage:hover {
   transform: scale(1.05);
 }
