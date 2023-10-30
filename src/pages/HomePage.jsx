@@ -1,5 +1,6 @@
 import AboutSection from "../container/HomeContainer/AboutSection";
 import Blog from "../container/HomeContainer/Blog";
+import FAQ from "../container/HomeContainer/FAQ";
 import HeroSection from "../container/HomeContainer/HeroSection";
 import Portfolio from "../container/HomeContainer/Portfolio";
 import Services from "../container/HomeContainer/Services";
@@ -14,6 +15,7 @@ export default function HomePage() {
       <Testimonials />
       <Portfolio />
       <Blog />
+      <FAQ />
     </>
   );
 }
