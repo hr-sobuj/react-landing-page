@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "../../styles/Blog.module.css";
+import styles from "../../styles/Home/Blog.module.css";
 
 import project1 from "../../assets/images/project1.png";
 import project2 from "../../assets/images/project2.png";
@@ -60,7 +60,7 @@ function Blog() {
   const shuffledBlogPosts = blogPosts.sort(() => Math.random() - 0.5);
 
   return (
-    <section className={styles.blog}>
+    <section className={styles.blog} id="blog">
       <div className="container">
         <h2 className={styles.blogTitle}>Blog</h2>
         <div className={styles.blogPosts}>

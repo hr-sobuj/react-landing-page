@@ -1,3 +1,10 @@
+/* 
+   Name: Habibur Rahman
+   Project: React Landing Page
+   Date: October 30, 2023
+   File: FAQ.module.css
+*/
+
 /* FAQ styling */
 .faq {
   background-color: #f5f5f5;
@@ -73,10 +80,6 @@
 @media (max-width: 768px) {
   .faqList {
     flex-direction: column;
-  }
-
-  .faqItem {
-    width: 100%;
   }
 }
 

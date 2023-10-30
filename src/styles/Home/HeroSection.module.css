@@ -87,6 +87,10 @@
     font-size: 3rem;
   }
 
+  .animated-image {
+    margin: 0px 0px;
+  }
+
   .hero-description {
     font-size: 1.5rem;
   }
@@ -103,8 +107,8 @@
 
 /* Responsive styles for mobile devices */
 @media (max-width: 480px) {
-  .container {
-    padding: 0 10px;
+  .animated-image {
+    margin: 0px 0px;
   }
 
   .hero {

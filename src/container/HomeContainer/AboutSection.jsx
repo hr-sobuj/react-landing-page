@@ -1,10 +1,10 @@
 import React from "react";
 import aboutUsImage from "../../assets/images/about.png";
-import styles from "../../styles/AboutSection.module.css";
+import styles from "../../styles/Home/AboutSection.module.css";
 
 function AboutUsSection() {
   return (
-    <section className={styles.aboutUs}>
+    <section className={styles.aboutUs} id="about">
       <div className="container">
         <div className={styles.aboutUsContent}>
           <div className={styles.aboutUsText}>

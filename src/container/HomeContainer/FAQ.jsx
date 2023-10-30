@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import styles from "../../styles/FAQ.module.css";
+import styles from "../../styles/Home/FAQ.module.css";
 
 function FAQ() {
   const [faqs, setFaqs] = useState([
