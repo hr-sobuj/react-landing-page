@@ -23,12 +23,13 @@
 
 /* Blog container */
 .blogPosts {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .blogCard {
+  flex: 0 0 calc(25% - 20px);
   padding: 20px;
   background-color: #fff;
   border: 1px solid #e5e5e5;
@@ -37,6 +38,7 @@
   transition: transform 0.3s;
   display: flex;
   flex-direction: column;
+  margin: 10px;
 }
 
 .blogCard:hover {
@@ -73,10 +75,10 @@ a {
 /* Responsive styles for tablets */
 @media (max-width: 768px) {
   .blogCard {
-    width: calc(45% - 20px);
+    flex: 0 0 calc(33.333% - 20px);
   }
   .blogPostTitle {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
   }
   .blogPostContent {
     font-size: 1rem;
@@ -86,7 +88,7 @@ a {
 /* Responsive styles for mobile */
 @media (max-width: 480px) {
   .blogCard {
-    width: calc(100% - 20px);
+    flex: 0 0 calc(100% - 20px);
   }
   .blogPostTitle {
     font-size: 1.2rem;
