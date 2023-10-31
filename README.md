@@ -136,15 +136,13 @@ export default MyComponent;
 
 Explore the `aos` documentation for a list of available animations and configuration options: [AOS - Animate On Scroll](https://michalsnik.github.io/aos/)
 
-
-
 ## Testing
 
 We've included tests for some components using `@testing-library/react`. You can run the tests with the following command:
 
 ```bash
 npm test
-````
+```
 
 Feel free to add more tests as your project grows.
 
