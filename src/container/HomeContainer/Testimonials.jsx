@@ -53,7 +53,7 @@ function Testimonials() {
   }, [currentTestimonialIndex]);
 
   return (
-    <section className={styles.testimonials} id="testimonials">
+    <section className={styles.testimonials} id="testimonial">
       <div className="container">
         <h2 className={styles.testimonialsTitle}>Testimonials</h2>
         <div className={styles.testimonial}>

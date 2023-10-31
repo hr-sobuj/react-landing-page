@@ -55,7 +55,7 @@ function NavBar() {
               {navigationItems.map((item) => (
                 <li key={item.id}>
                   <Link
-                    className=""
+                    activeClass={styles.active}
                     to={item.id}
                     smooth={true}
                     duration={500}

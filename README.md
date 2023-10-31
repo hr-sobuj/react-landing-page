@@ -1,70 +1,119 @@
-# Getting Started with Create React App
+# React Landing Page
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Project Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
 
-## Available Scripts
+A stunning and responsive landing page built using React.js.
 
-In the project directory, you can run:
+![Screenshot](/screenshots/screenshot.jpeg)
 
-### `npm start`
+## Table of Contents
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- [About](#about)
+- [Getting Started](#getting-started)
+- [Project Structure](#project-structure)
+- [Styling](#styling)
+- [Usage](#usage)
+- [Testing](#testing)
+- [Deployment](#deployment)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## About
 
-### `npm test`
+This project is a simple yet attractive landing page created using React. It includes various sections such as a hero section, about us, services, testimonials, portfolio and a blog. Smooth scrolling between sections is achieved using the `react-scroll` library.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+To get started with this project, follow these steps:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+1. Clone the repository:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+git clone https://github.com/hr-sobuj/react-landing-page
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+2. Install dependencies:
 
-### `npm run eject`
+```bash
+npm install
+```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+3. Start the development server:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```bash
+npm start
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The app will run in development mode at [http://localhost:3000](http://localhost:3000).
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Project Structure
 
-## Learn More
+The project structure is organized as follows:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- `src/` contains the main source code.
+  - `assets/` holds static assets such as images.
+  - `components/` includes reusable React components.
+  - `container/` contains container components for various sections.
+  - `pages/` holds the pages or main sections of the landing page.
+  - `styles/` houses styling files for components and pages.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Styling
 
-### Code Splitting
+This project uses CSS Modules for styling. CSS Modules provide local scope for CSS, making it easier to manage and style React components without worrying about global style conflicts. You can find the CSS Modules in the `styles/` directory.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+To apply styles to a React component, import the CSS module at the top of your component file and use the styles as you normally would. For example:
 
-### Analyzing the Bundle Size
+```jsx
+import React from "react";
+import styles from "./styles/MyComponent.module.css";
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+const MyComponent = () => {
+  return (
+    <div className={styles.container}>
+      <p className={styles.text}>Styled with CSS Modules</p>
+    </div>
+  );
+};
 
-### Making a Progressive Web App
+export default MyComponent;
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Usage
 
-### Advanced Configuration
+- `react-icons` is used to include icons throughout the landing page. You can easily add icons to your components. For example:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+```jsx
+import { FaHeart } from "react-icons/fa";
 
-### Deployment
+const MyComponent = () => {
+  return (
+    <div>
+      <FaHeart /> I love React!
+    </div>
+  );
+};
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+- `react-scroll` is used to enable smooth scrolling between sections. Check the components where you want to implement smooth scrolling and follow the documentation for `react-scroll`.
 
-### `npm run build` fails to minify
+## Testing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+We've included tests for some components using `@testing-library/react`. You can run the tests with the following command:
+
+```bash
+npm test
+```
+
+Feel free to add more tests as your project grows.
+
+## Deployment
+
+To deploy your landing page, follow these steps:
+
+1. Create a production build:
+
+```bash
+npm run build
+```
+
+2. You will find the optimized build files in the `build/` directory.
+
+3. Deploy the contents of the `build/` directory to your hosting platform of choice. For example, using Netlify, Vercel, or GitHub Pages.
