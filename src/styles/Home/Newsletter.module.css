@@ -7,7 +7,7 @@
 
 /* Newsletter styling */
 .newsletter {
-  background-color: #0074d9;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 80px 0;
   text-align: center;
@@ -55,7 +55,7 @@
 /* Styling for the newsletter subscribe button */
 .newsletterButton {
   background-color: #fff;
-  color: #0074d9;
+  color: var(--primary-color);
   border: none;
   border-radius: 5px;
   padding: 15px 25px;
@@ -65,7 +65,7 @@
 }
 
 .newsletterButton:hover {
-  background-color: #005ea8;
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
