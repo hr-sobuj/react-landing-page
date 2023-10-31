@@ -22,7 +22,7 @@ export default function HomePage() {
     <>
       <NavBar />
       <HeroSection />
-      <div data-aos="fade-up">
+      <div data-aos="fade-right">
         <AboutSection />
       </div>
       <div data-aos="zoom-in">
@@ -37,7 +37,7 @@ export default function HomePage() {
       <div data-aos="fade-up">
         <Blog />
       </div>
-      <div data-aos="zoom-in">
+      <div data-aos="fade-left">
         <FAQ />
       </div>
       <Newsletter />
