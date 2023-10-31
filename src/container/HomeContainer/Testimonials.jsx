@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import styles from "../../styles/Home/Testimonials.module.css";
 
 import client1Image from "../../assets/images/client1.jpg";
@@ -61,7 +62,7 @@ function Testimonials() {
             className={styles.testimonialButton}
             onClick={prevTestimonial}
           >
-            &lt;
+            <FaChevronLeft />
           </button>
           <div className={styles.testimonialContent}>
             <div className={styles.testimonialImage}>
@@ -81,7 +82,7 @@ function Testimonials() {
             className={styles.testimonialButton}
             onClick={nextTestimonial}
           >
-            &gt;
+            <FaChevronRight />
           </button>
         </div>
       </div>
