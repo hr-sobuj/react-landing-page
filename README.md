@@ -54,6 +54,7 @@ The project structure is organized as follows:
   - `container/` contains container components for various sections.
   - `pages/` holds the pages or main sections of the landing page.
   - `styles/` houses styling files for components and pages.
+  - `tmp/` temporary storage for pages.
 
 ## Styling
 
