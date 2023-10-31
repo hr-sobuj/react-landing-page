@@ -15,7 +15,7 @@
 /* Styling for the title */
 .serviceTitle {
   font-size: 2.5rem;
-  color: #0074d9;
+  color: var(--primary-color);
   font-weight: bold;
   margin-bottom: 40px;
 }

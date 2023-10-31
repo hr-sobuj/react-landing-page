@@ -25,7 +25,7 @@
 /* Styling for the main title */
 .aboutUsTitle {
   font-size: 2.5rem;
-  color: #0074d9;
+  color: var(--primary-color);
   font-weight: bold;
   margin-bottom: 20px;
   transition: color 0.3s;

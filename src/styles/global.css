@@ -10,6 +10,18 @@
   --secondary-color: #142536;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span {
+  color: var(--primary-color);
+}
+
 /* Default container class */
 .container {
   max-width: 1480px;

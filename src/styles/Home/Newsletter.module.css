@@ -18,12 +18,14 @@
   font-size: 2.5rem;
   font-weight: bold;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 /* Styling for the description */
 .newsletterDescription {
   font-size: 1.3rem;
   margin-bottom: 30px;
+  color: #fff;
 }
 
 /* Newsletter container */

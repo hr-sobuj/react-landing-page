@@ -6,7 +6,7 @@ import styles from "../../styles/Footer.module.css";
 function Footer() {
   return (
     <footer className={styles.footer}>
-      <div className={styles.container}>
+      <div className="container">
         <div className={styles.footerContent}>
           <div className={styles.footerSection}>
             <h3 className={styles.footerTitle}>Contact Us</h3>

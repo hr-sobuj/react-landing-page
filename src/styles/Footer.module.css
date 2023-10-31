@@ -13,14 +13,6 @@
   text-align: center;
 }
 
-/* Footer container */
-.container {
-  max-width: 1200px;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-}
-
 /* Footer content layout */
 .footerContent {
   display: flex;
@@ -39,6 +31,7 @@
 .footerTitle {
   font-size: 1.5rem;
   margin-bottom: 20px;
+  color: #fff;
 }
 
 /* Footer information style */

@@ -29,6 +29,7 @@
   font-size: 3.5rem;
   margin-bottom: 20px;
   font-weight: bold;
+  color: #fff;
 }
 
 /* Styling for the sub-headline */
@@ -36,6 +37,7 @@
   font-size: 1.8rem;
   margin-bottom: 20px;
   font-style: italic;
+  color: #fff;
 }
 
 /* Styling for the call-to-action button */
