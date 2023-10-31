@@ -33,7 +33,7 @@ function FAQ() {
   };
 
   return (
-    <div className={styles.faq}>
+    <div className={styles.faq} id="faq">
       <div className={styles.faqContainer}>
         <h2 className={styles.faqTitle}>Frequently Asked Questions</h2>
         <div className={styles.faqList}>

@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaBars } from "react-icons/fa";
+import { FaBars, FaTimes } from "react-icons/fa";
 import { Link } from "react-scroll";
 import logo from "./../../assets/images/logo.png";
 
@@ -11,8 +11,28 @@ const navigationItems = [
     text: "About",
   },
   {
+    id: "service",
+    text: "Services",
+  },
+  {
+    id: "testimonial",
+    text: "Testimonials",
+  },
+  {
+    id: "portfolio",
+    text: "Portfolio",
+  },
+  {
     id: "blog",
     text: "Blog",
+  },
+  {
+    id: "faq",
+    text: "FAQ",
+  },
+  {
+    id: "newsletter",
+    text: "Newsletter",
   },
 ];
 
@@ -34,15 +54,27 @@ function NavBar() {
             <ul className={isMobileNavOpen ? styles.open : ""}>
               {navigationItems.map((item) => (
                 <li key={item.id}>
-                  <Link to={item.id} smooth={true} duration={500} offset={-80}>
+                  <Link
+                    className=""
+                    to={item.id}
+                    smooth={true}
+                    duration={500}
+                    offset={-80}
+                  >
                     {item.text}
                   </Link>
                 </li>
               ))}
             </ul>
-            <div className={styles.mobileIcon} onClick={toggleMobileNav}>
-              <FaBars />
-            </div>
+            {isMobileNavOpen ? (
+              <div className={styles.mobileIcon} onClick={toggleMobileNav}>
+                <FaTimes />
+              </div>
+            ) : (
+              <div className={styles.mobileIcon} onClick={toggleMobileNav}>
+                <FaBars />
+              </div>
+            )}
           </div>
         </div>
       </div>

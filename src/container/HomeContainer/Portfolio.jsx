@@ -34,7 +34,7 @@ const projects = [
 
 function Portfolio() {
   return (
-    <section className={styles.portfolio}>
+    <section className={styles.portfolio} id="portfolio">
       <div className="container">
         <h2 className={styles.portfolioTitle}>Portfolio</h2>
         <div className={styles.projects}>

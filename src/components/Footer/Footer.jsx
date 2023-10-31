@@ -11,7 +11,10 @@ function Footer() {
           <div className={styles.footerSection}>
             <h3 className={styles.footerTitle}>Contact Us</h3>
             <p className={styles.footerInfo}>
-              Email: sobuj.hrs@gmail.com
+              Email:{" "}
+              <a style={{ color: "#bbb" }} href="mailto:sobuj.hrs@gmail.com">
+                sobuj.hrs@gmail.com
+              </a>
               <br />
               Phone: +8801797972527
               <br />
@@ -45,32 +48,31 @@ function Footer() {
             <h3 className={styles.footerTitle}>Useful Links</h3>
             <ul className={styles.footerLinks}>
               <li>
-                <a href="#">About Us</a>
+                <a href="#about">About Us</a>
               </li>
               <li>
-                <a href="#">Services</a>
+                <a href="#service">Services</a>
               </li>
               <li>
-                <a href="#">Portfolio</a>
+                <a href="#portfolio">Portfolio</a>
               </li>
               <li>
-                <a href="#">Testimonials</a>
+                <a href="#testimonial">Testimonials</a>
               </li>
             </ul>
           </div>
           <div className={styles.footerSection}>
             <h3 className={styles.footerTitle}>Additional Section 1</h3>
             <p className={styles.footerInfo}>
-              This is the first additional section in the footer. It can contain
-              additional information, links, or any content you'd like to
-              include.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              eos odit? Tenetur dignissimos odit, deserunt
             </p>
           </div>
           <div className={styles.footerSection}>
             <h3 className={styles.footerTitle}>Additional Section 2</h3>
             <p className={styles.footerInfo}>
-              This is the second additional section in the footer. You can
-              customize its content as needed for your project.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              eos odit? Tenetur dignissimos odit, deserunt
             </p>
           </div>
         </div>

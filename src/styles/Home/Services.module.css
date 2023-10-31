@@ -46,7 +46,7 @@
 /* Styling for service item icons */
 .serviceIcon {
   font-size: 3.5rem;
-  color: #0074d9;
+  color: var(--primary-color);
   margin-bottom: 20px;
 }
 

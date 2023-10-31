@@ -42,6 +42,9 @@
   color: #000;
   text-decoration: none;
   transition: color 0.3s;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 17px;
 }
 
 .links a:hover {
@@ -63,13 +66,13 @@
   .mobileIcon {
     display: block;
     font-size: 1.5rem;
-    color: #000;
+    color: var(--primary-color);
   }
 
   .open {
     display: flex !important;
     flex-direction: column;
-    background-color: #0074d9;
+    background-color: var(--secondary-color);
     position: absolute;
     top: 70px;
     right: 0;
@@ -91,8 +94,8 @@
   }
 
   .open a:hover {
-    color: #fff;
-    background-color: #0056b3;
+    color: #000;
+    background-color: #fff;
     border-radius: 5px;
     padding: 5px 10px;
     transition: background-color 0.3s;

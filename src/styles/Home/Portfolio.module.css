@@ -68,7 +68,7 @@
 /* Styling for project links */
 .projectLink {
   display: inline-block;
-  background-color: #0074d9;
+  background-color: var(--primary-color);
   color: #fff;
   padding: 10px 20px;
   border-radius: 5px;
@@ -78,7 +78,7 @@
 }
 
 .projectLink:hover {
-  background-color: #0056b3;
+  background-color: var(--secondary-color);
 }
 
 /* Responsive styles for tablets */

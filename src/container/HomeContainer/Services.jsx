@@ -28,7 +28,7 @@ const servicesData = [
 
 function Services() {
   return (
-    <section className={styles.service}>
+    <section className={styles.service} id="service">
       <div className="container">
         <h2 className={styles.serviceTitle}>Our Services</h2>
         <div className={styles.serviceItems}>
