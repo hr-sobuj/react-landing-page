@@ -48,7 +48,9 @@ function NavBar() {
       <div className="container">
         <div className={styles.navbarContent}>
           <div className={styles.logo}>
-            <img src={logo} alt="" />
+            <a href="/">
+              <img src={logo} alt="" />
+            </a>
           </div>
           <div className={styles.links}>
             <ul className={isMobileNavOpen ? styles.open : ""}>

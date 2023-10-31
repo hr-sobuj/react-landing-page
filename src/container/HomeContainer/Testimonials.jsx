@@ -2,8 +2,8 @@ import React, { useEffect, useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import styles from "../../styles/Home/Testimonials.module.css";
 
-import client1Image from "../../assets/images/client1.jpg";
-import client2Image from "../../assets/images/client2.jpg";
+import client1Image from "../../assets/images/client1.png";
+import client2Image from "../../assets/images/client2.png";
 import client3Image from "../../assets/images/client3.jpg";
 
 const testimonialsData = [
