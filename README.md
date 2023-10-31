@@ -94,6 +94,8 @@ const MyComponent = () => {
 
 - `react-scroll` is used to enable smooth scrolling between sections. Check the components where you want to implement smooth scrolling and follow the documentation for `react-scroll`.
 
+-`aos` Small library to animate elements on your page as you scroll.
+
 ## Testing
 
 We've included tests for some components using `@testing-library/react`. You can run the tests with the following command:
