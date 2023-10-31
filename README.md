@@ -94,7 +94,49 @@ const MyComponent = () => {
 
 - `react-scroll` is used to enable smooth scrolling between sections. Check the components where you want to implement smooth scrolling and follow the documentation for `react-scroll`.
 
--`aos` Small library to animate elements on your page as you scroll.
+- `aos` is a small library used to animate elements on your page as you scroll. To use `aos`, follow these steps:
+
+1. Install `aos` in your project:
+
+```bash
+npm install aos
+```
+
+2. Import `aos` and initialize it in your component:
+
+```jsx
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const MyComponent = () => {
+  useEffect(() => {
+    AOS.init(); // Initialize AOS
+  }, []);
+
+  return (
+    <div data-aos="fade-up">
+      This element will have a fade-up animation as you scroll.
+    </div>
+  );
+};
+
+export default MyComponent;
+```
+
+3. Add `data-aos` attributes to the HTML elements you want to animate. You can choose from various animation options provided by `aos`.
+
+4. Customize your animations by configuring `data-aos` attributes. For example:
+
+```jsx
+<div data-aos="fade-up" data-aos-duration="1000" data-aos-easing="ease-in-out">
+  This element will have a custom fade-up animation with a duration of 1000ms.
+</div>
+```
+
+Explore the `aos` documentation for a list of available animations and configuration options: [AOS - Animate On Scroll](https://michalsnik.github.io/aos/)
+
+
 
 ## Testing
 
@@ -102,7 +144,7 @@ We've included tests for some components using `@testing-library/react`. You can
 
 ```bash
 npm test
-```
+````
 
 Feel free to add more tests as your project grows.
 
