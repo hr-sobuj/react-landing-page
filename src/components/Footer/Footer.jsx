@@ -2,6 +2,7 @@
 import React from "react";
 import { FaFacebook, FaInstagram, FaTwitter } from "react-icons/fa"; // Import the icons
 import styles from "../../styles/Footer.module.css";
+import ScrollToTopButton from "../Button/ScrollToTopButton";
 
 function Footer() {
   return (
@@ -77,6 +78,7 @@ function Footer() {
           </div>
         </div>
       </div>
+      <ScrollToTopButton />
     </footer>
   );
 }

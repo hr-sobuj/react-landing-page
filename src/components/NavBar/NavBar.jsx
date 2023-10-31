@@ -44,7 +44,7 @@ function NavBar() {
   };
 
   return (
-    <nav className={styles.navbar}>
+    <nav className={styles.navbar} id="top">
       <div className="container">
         <div className={styles.navbarContent}>
           <div className={styles.logo}>
