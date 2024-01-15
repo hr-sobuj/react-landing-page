@@ -74,7 +74,7 @@ function Blog() {
               <a href={post.url} className={styles.blogPostTitle}>
                 {post.title}
               </a>
-              <p className={styles.blogPostContent}>{post.content}</p>
+              <p className={styles.blogPostContent}> {post.content} </p>
             </div>
           ))}
         </div>
